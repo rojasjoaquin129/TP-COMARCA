@@ -1,0 +1,21 @@
+{
+    "name": "jamav/htdocs",
+    "require": {
+        "slim/slim": "4.*",
+        "slim/psr7": "^1.2",
+        "firebase/php-jwt": "^5.2",
+        "illuminate/database": "^7.29",
+        "illuminate/events": "^7.29",
+        "myclabs/php-enum": "^1.7"
+    },
+    "autoload": {
+        "psr-4": {
+            "Controllers\\": "src/Controllers",
+            "Components\\": "src/Components",
+            "Models\\": "src/Models",
+            "Middlewares\\": "src/Middlewares",
+            "Config\\": "Config",
+            "Enum\\": "src/Enum"
+        }
+    }
+}
