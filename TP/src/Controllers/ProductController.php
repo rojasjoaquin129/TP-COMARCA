@@ -137,8 +137,8 @@ class ProductController
                 $item->id = 0;
                 $item->description = $description;
                 $item->area = $area;
-                $item->save();
                 $item->cost = $cost;
+                $item->save();
                 $response->getBody()->write(GenericResponse::obtain(true, "Item agregado correctamente.", $item));
             }
         } catch (\Exception $e) {
